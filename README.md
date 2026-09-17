@@ -6,6 +6,8 @@
 
 ## 快速体验
 
+[在线体验 Demo](https://qincong0-oss.github.io/Weave-growth/)：点击“看一次完整闭环”开始。网站已通过 GitHub Pages 发布。
+
 打开根目录 `index.html`，或在 Node.js 20 及以上环境中运行：
 
 ```bash
@@ -54,9 +56,9 @@ npm run build
 
 远程仓库：[qincong0-oss/Weave-growth](https://github.com/qincong0-oss/Weave-growth)，由项目所有者创建为公开仓库。当前代码、PRD 和协作上下文在本仓库共同维护。
 
-GitHub Pages 首次设置待完成。进入仓库 Settings → Pages，选择 **Deploy from a branch → main → /(root) → Save**。之后 `main` 的静态文件会自动发布。根目录 `.nojekyll` 让 Pages 直接提供已经构建好的 HTML。
+GitHub Pages 已启用，发布源为 `main` 分支根目录。之后 `main` 的静态文件会自动发布。根目录 `.nojekyll` 让 Pages 直接提供已经构建好的 HTML。
 
-预期演示地址：`https://qincong0-oss.github.io/Weave-growth/`。只有 Pages 部署成功且访问确认后，才能将其标为已上线。仓库名称中的 `W` 为大写。
+演示地址：[qincong0-oss.github.io/Weave-growth](https://qincong0-oss.github.io/Weave-growth/)。2026-09-17 已确认部署成功、HTTP 200，线上内容与本地验证版本一致。仓库名称中的 `W` 为大写。
 
 `@0xrelander` 的实际成员邀请和强制评审规则仍待仓库所有者配置。已有 `scripts/bootstrap-github.sh` 保留为最初的初始化参考；本仓库已创建，无需再执行。
 

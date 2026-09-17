@@ -1,6 +1,6 @@
 # v0.1 验证记录
 
-日期：2026-09-17。范围：本地单文件交互演示。
+日期：2026-09-17。范围：本地交互演示、远程 CI 和 GitHub Pages 发布。
 
 ## 已通过
 
@@ -21,7 +21,9 @@
 
 完整项目提交 `4e7a131a60cee27ecf4ba055c6c7a05c26a560df` 已推送到 `qincong0-oss/Weave-growth`。31 个远程文件的 Git blob SHA 与本地内容逐项一致。[GitHub Check 工作流](https://github.com/qincong0-oss/Weave-growth/actions/runs/35247382567) 已成功通过测试、构建和生成文件一致性检查。
 
-截至本次检查，仓库 `has_pages` 为 `false`，预期网站返回 HTTP 404。需在 Settings → Pages 首次启用从 `main` 根目录发布，随后再次验证实际网页。仓库中已有代码不代表网站已经上线。
+用户启用 Pages 后，[发布工作流](https://github.com/qincong0-oss/Weave-growth/actions/runs/35247777023) 已成功完成，对应提交 `f0cc41c44d4d3a914deb1eabcedb351929a3c2ad`。[同一提交的 CI](https://github.com/qincong0-oss/Weave-growth/actions/runs/35247587492) 也已通过。
+
+公开地址 [在线 Demo](https://qincong0-oss.github.io/Weave-growth/) 返回 HTTP 200。获取到的 HTML 为 102,040 字节，与本地已通过桌面、手机和业务规则验证的 `index.html` 逐字节一致。此前的 HTTP 404 已随首次发布解决。
 
 ## 复现
 
