@@ -36,3 +36,9 @@
 Chromium 已验证桌面 1440 × 1050 与手机 390 × 844：八个页面、六个报告章节无页面整体横向溢出，原有八步增长演示正常。检查过证据详情、摘要下载、付款方式变更、财务复核、字段映射、API 示例导入、真实本地 CSV 上传、模板下载、规格单样例、接受/拒绝冲突及刷新后保留。导入的 HTML 样本文本被转义，没有执行；浏览器无未处理错误。关键桌面与手机截图已人工检查。
 
 真实征信、ERP/API、OCR、财务审批及多用户数据库未接入。真实 CSV 保存在当前浏览器，未上传任何外部系统。远程 PR、CI 与发布结果以对应 GitHub 记录为准。
+
+### v0.2 上线回执
+
+[PR #2](https://github.com/qincong0-oss/Weave-growth/pull/2) 已合并，提交 `4c1c7af1c2cbe737ef6d5c363d49b689bd33715c`。[PR 检查](https://github.com/qincong0-oss/Weave-growth/actions/runs/35251398719)、[主分支检查](https://github.com/qincong0-oss/Weave-growth/actions/runs/35251466590) 与 [Pages 发布](https://github.com/qincong0-oss/Weave-growth/actions/runs/35251465294) 均成功。
+
+线上 HTML 返回 HTTP 200，162,300 字节，与本地构建逐字节一致。SHA-256：`35473161c576ae84f1a8c319d20c8372bb577918327da6f0612c6f549f568ed4`。本次发布未改变原仓库、未发送客户消息、未接入真实征信或 ERP。

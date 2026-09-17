@@ -43,4 +43,4 @@ GitHub Pages 已由用户启用，从 `main` 分支根目录发布。2026-09-17 
 
 ## v0.2 本轮交接
 
-用户要求加强外贸回款背调、企业现有系统/产品资料接入，并直接修改 Git 与安排上线。实现见 ADR 0002；集成边界见 `docs/integration-contract.md`。本轮计划在 PR 检查通过后合并 main，由现有 Pages 分支发布。
+用户要求加强外贸回款背调、企业现有系统/产品资料接入，并直接修改 Git 与安排上线。实现见 ADR 0002；集成边界见 `docs/integration-contract.md`。本轮已通过 [PR #2](https://github.com/qincong0-oss/Weave-growth/pull/2) 合并 main，发布提交 `4c1c7af1c2cbe737ef6d5c363d49b689bd33715c`。PR 与 main 的 Check 均成功，Pages 发布成功。公开页面 HTTP 200，162,300 字节，与本地已验证构建逐字节一致。企业背调入口 `#/diligence`，产品接入入口 `#/ingestion`。
