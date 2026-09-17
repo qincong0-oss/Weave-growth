@@ -15,7 +15,13 @@
 
 ## 验证边界
 
-业务数据为固定演示样本。此记录不代表真实模型效果、真实邮件送达率、ERP/CRM 接口可用性或商业转化率已经得到验证。GitHub CI 文件已经准备，但远程 CI 尚未运行。
+业务数据为固定演示样本。此记录不代表真实模型效果、真实邮件送达率、ERP/CRM 接口可用性或商业转化率已经得到验证。
+
+## 远程仓库检查
+
+完整项目提交 `4e7a131a60cee27ecf4ba055c6c7a05c26a560df` 已推送到 `qincong0-oss/Weave-growth`。31 个远程文件的 Git blob SHA 与本地内容逐项一致。[GitHub Check 工作流](https://github.com/qincong0-oss/Weave-growth/actions/runs/35247382567) 已成功通过测试、构建和生成文件一致性检查。
+
+截至本次检查，仓库 `has_pages` 为 `false`，预期网站返回 HTTP 404。需在 Settings → Pages 首次启用从 `main` 根目录发布，随后再次验证实际网页。仓库中已有代码不代表网站已经上线。
 
 ## 复现
 
