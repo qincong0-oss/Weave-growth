@@ -2,7 +2,7 @@
 
 本版采用静态 HTML、CSS、原生 JavaScript 模块。页面、初始数据和纯业务状态函数分开管理，构建为一个可独立打开的 HTML。这个选择降低 Demo 分享成本，不预设真实企业产品也使用相同存储方式。
 
-`data.mjs` 提供初始企业、产品和客户记录。`engine.mjs` 使用事件返回新的状态及用户消息，不访问 DOM。`app.mjs` 负责导航、视图、演示事件和浏览器存储。构建脚本按照数据、引擎、界面的顺序组合模块。
+`data.mjs` 提供初始企业、产品和客户记录。`engine.mjs` 使用事件返回新的状态及用户消息，不访问 DOM。`app.mjs` 负责导航、视图、演示事件和浏览器存储。`diligence.mjs` 负责背调样本、回款指标和情景测算；`ingestion.mjs` 负责 CSV 解析、映射校验、待确认与历史保留；`business-views.mjs` 管理新增报告和接入视图。构建顺序为 data → diligence → ingestion → engine → business-views → app。浏览器状态 schema 3 兼容迁移 schema 2，保留原业务记录。
 
 ## 事件与派生状态
 

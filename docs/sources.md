@@ -8,3 +8,13 @@
 | [GitHub CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) | 评审负责人配置 | 实际生效依赖仓库权限、计划和规则 |
 
 产品方向还来自本项目用户讨论，已经确认的内容整理在 product-context。未验证的商业判断不得引用为行业既定结论。源码中的数据均为演示 fixtures。
+
+## v0.2 外贸背调方法参考（2026-09-17 核对）
+
+- [中国信保：资信服务](https://www.sinosure.com.cn/ywjs/gdyw/zxfw/index.shtml)：企业身份、经营财务、信用与交易信息；提单报告的采购发现用途。用于定义报告维度，不声称已获 API 授权。
+- [中国信保：短期出口贸易险](https://www.sinosure.com.cn/ywjs/myxcp/dqckxybx/dqckxybxjj/index.shtml)：应收汇商业/政治风险与出口前风险存在不同保障范围。Demo 不自动批准保险额度或推算赔款。
+- [Companies House：企业信息](https://www.gov.uk/get-information-about-a-company)：登记地址、董事、历史名称、抵押与破产信息等查询字段；仅英国示例，不推广为全球统一覆盖。
+- [美国商务部 ITA：付款方式](https://www.trade.gov/methods-payment)：预付、信用证、托收、赊销与寄售的风险结构。用于付款条件解释，不直接套用美国法律要求到中国出口商。
+- [OFAC FAQ 5：名称匹配核实](https://ofac.treasury.gov/faqs/5)：潜在同名线索需要额外主体标识核验；具体适用性按交易法域确定。
+
+上述是设计方法来源，不是 Seabrook、North 等虚构公司的信用报告。真实背调必须获取对应主体、时间与授权范围内的证据。

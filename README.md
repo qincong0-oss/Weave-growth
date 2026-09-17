@@ -4,6 +4,12 @@
 
 这是可运行的交互原型。所有企业、产品、回复、发送与 CRM 回写均为演示数据；没有真实邮件、模型或企业系统连接。
 
+## v0.2 新增
+
+- [企业回款背调](https://qincong0-oss.github.io/Weave-growth/#/diligence)：主体、采购链、应收核销、财务、法律/贸易线索、交易条件、证据与财务复核。企业资料仍为虚构样例。
+- [企业产品接入](https://qincong0-oss.github.io/Weave-growth/#/ingestion)：ERP/API 样例、真实本地 CSV、规格单提取样例；字段映射、校验、差异与负责人确认。未连接实际 ERP 或 OCR 服务。
+- 30 项业务规则测试，保留八步增长循环和浏览器旧状态迁移。
+
 ## 快速体验
 
 [在线体验 Demo](https://qincong0-oss.github.io/Weave-growth/)：点击“看一次完整闭环”开始。网站已通过 GitHub Pages 发布。
@@ -32,6 +38,9 @@ npm run dev
 | 位置 | 内容 |
 | --- | --- |
 | `src/data.mjs` | 脱敏演示数据与初始状态 |
+| `src/diligence.mjs` | 回款指标、信用证据与未收情景 |
+| `src/ingestion.mjs` | CSV 解析、产品校验、差异与版本历史 |
+| `src/business-views.mjs` | 完整背调报告与产品接入视图 |
 | `src/engine.mjs` | 匹配、事件、失效传播、发送与交接规则 |
 | `src/app.mjs` | 页面、导航、对话框与引导演示 |
 | `src/styles.css` | 响应式界面与面料示意纹理 |
