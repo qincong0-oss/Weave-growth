@@ -13,10 +13,12 @@ export const accounts = [
 ];
 export const freshAccount={id:'aube',name:'Maison Aube',initials:'MA',country:'法国',city:'Paris',type:'女装品牌',role:'采购角色待确认',buyer:'待核实',product:'HX-C180',fit:'suggested',note:'轻量衬衫系列与水洗全棉用途相近',source:'新增系列观察 · 演示资料',evidence:'公开系列出现轻量棉质衬衫，值得进一步核实采购关系。',unknown:'是否自采面料、克重与颜色要求',contact:'待核实',owner:'陈雅',relationship:'新发现',palette:'rose'};
 export function seedState(){return {
- schema:2,running:true,version:0,products:structuredClone(products),accounts:structuredClone(accounts),drafts:{},draftHistory:[],sentMessages:[],replies:{},handoffs:{},reviewed:[],suppressed:[],events:[],processed:[],
+ schema:3,creditReviews:{},creditTerms:{},intakeHistory:[],productHistory:[],running:true,version:0,products:structuredClone(products),accounts:structuredClone(accounts),drafts:{},draftHistory:[],sentMessages:[],replies:{},handoffs:{},reviewed:[],suppressed:[],events:[],processed:[],
  gapStatus:'待验证',knowledge:[
   {id:'k-product',title:'HX-L240 成分已统一',body:'亚麻 55%、棉 45%。对外材料沿用已确认的技术卡版本。',type:'已确认事实',source:'产品技术卡 v2',scope:'HX-L240',owner:'资料负责人'},
   {id:'k-moq',title:'起订条件需要连同颜色使用',body:'300 m / 色仅适用于已确认的自然色；不能自动用于所有定染颜色。',type:'业务条件',source:'产品条件记录',scope:'HX-L240 自然色',owner:'资料负责人'},
   {id:'k-elta',title:'Elta 由成衣厂采购',body:'下一步应核实引荐关系，不能直接把品牌视为采购主体。',type:'客户反馈',source:'历史回复',scope:'Elta 当前关系',owner:'陈雅'}
  ],settings:{mode:'review',dailyLimit:5},crmSynced:false,discovered:false
 };}
+
+export function restoreState(cached){if(!cached||![2,3].includes(cached.schema)||!Array.isArray(cached.accounts)||!Array.isArray(cached.products))return seedState();return {...seedState(),...cached,schema:3,creditReviews:cached.creditReviews||{},creditTerms:cached.creditTerms||{},intakeHistory:cached.intakeHistory||[],productHistory:cached.productHistory||[]};}

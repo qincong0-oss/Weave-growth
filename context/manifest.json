@@ -1,7 +1,11 @@
 {
   "project": "Weave textile presales",
-  "context_version": "0.1.0",
-  "read_first": ["AGENTS.md", "context/current-state.md", "docs/product-context.md"],
+  "context_version": "0.2.0",
+  "read_first": [
+    "AGENTS.md",
+    "context/current-state.md",
+    "docs/product-context.md"
+  ],
   "product_requirements": "docs/prd.md",
   "decisions": "docs/decisions",
   "architecture": "docs/architecture.md",
@@ -14,5 +18,8 @@
   "repository": "qincong0-oss/Weave-growth",
   "demo_url": "https://qincong0-oss.github.io/Weave-growth/",
   "remote_access_status": "pages_live_verified_invitation_pending",
-  "updated_at": "2026-09-17"
+  "updated_at": "2026-09-17",
+  "integration_contract": "docs/integration-contract.md",
+  "credit_diligence_route": "#/diligence",
+  "product_intake_route": "#/ingestion"
 }

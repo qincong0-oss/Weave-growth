@@ -3,7 +3,7 @@ import {fileURLToPath} from 'node:url';
 import {resolve,dirname} from 'node:path';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const parts=[];
-for(const name of ['data','engine','app']){
+for(const name of ['data','diligence','ingestion','engine','business-views','app']){
  const text=await readFile(resolve(root,`src/${name}.mjs`),'utf8');
  parts.push(text.replace(/^import[^\n]+\n/gm,'').replace(/^export \{[^}]+\};?\n/gm,'').replace(/^export /gm,''));
 }
