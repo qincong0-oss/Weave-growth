@@ -1,0 +1,6 @@
+# Prepared configuration. Remote collaborator access must be granted separately.
+* @0xrelander
+/docs/product-context.md @qincong0-oss
+/docs/prd.md @qincong0-oss
+/.github/ @qincong0-oss
+/AGENTS.md @qincong0-oss @0xrelander

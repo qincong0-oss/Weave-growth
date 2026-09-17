@@ -1,0 +1,17 @@
+{
+  "project": "Weave textile presales",
+  "context_version": "0.1.0",
+  "read_first": ["AGENTS.md", "context/current-state.md", "docs/product-context.md"],
+  "product_requirements": "docs/prd.md",
+  "decisions": "docs/decisions",
+  "architecture": "docs/architecture.md",
+  "demo_script": "docs/demo-script.md",
+  "coordination": "docs/team.md",
+  "sources": "docs/sources.md",
+  "verification": "docs/verification.md",
+  "owner": "qincong0-oss",
+  "coordinator": "0xrelander",
+  "repository": "qincong0-oss/Weave-growth",
+  "remote_access_status": "repository_initialized_pages_and_invitation_pending",
+  "updated_at": "2026-09-17"
+}
