@@ -2,7 +2,7 @@
 
 本版采用静态 HTML、CSS、原生 JavaScript 模块。页面、初始数据和纯业务状态函数分开管理，构建为一个可独立打开的 HTML。这个选择降低 Demo 分享成本，不预设真实企业产品也使用相同存储方式。
 
-`data.mjs` 提供初始企业、产品和客户记录。`engine.mjs` 使用事件返回新的状态及用户消息，不访问 DOM。`app.mjs` 负责导航、视图、演示事件和浏览器存储。`diligence.mjs` 负责背调样本、回款指标和情景测算；`ingestion.mjs` 负责 CSV 解析、映射校验、待确认与历史保留；`business-views.mjs` 管理新增报告和接入视图。构建顺序为 data → diligence → ingestion → engine → business-views → app。浏览器状态 schema 3 兼容迁移 schema 2，保留原业务记录。
+`data.mjs` 提供初始企业、产品和客户记录。`engine.mjs` 使用事件返回新的状态及用户消息，不访问 DOM。`app.mjs` 负责导航、视图、演示事件和浏览器存储。`diligence.mjs` 负责背调样本、回款指标和情景测算；`ingestion.mjs` 负责 CSV 解析、映射校验、待确认与历史保留；`business-views.mjs` 管理新增报告和接入视图。v0.3 构建顺序为 data → diligence → ingestion → engine → business-views → orders → order-views → app。浏览器状态 schema 3 兼容迁移 schema 2，保留原业务记录。
 
 ## 事件与派生状态
 
@@ -15,3 +15,11 @@
 服务端企业与角色权限、数据库和版本历史、可靠队列与幂等键、真实连接的授权与回执、发送前校验、错误恢复、审计与来源权限。接入真实数据前不能使用本地存储代替这些能力。
 
 保持客户主键与负责人来自 CRM，企业指定权威字段来自相应来源。织见维护派生证据、判断与行动，而不是重建整套 ERP 或 CRM。企业运行知识和代码仓库中的项目上下文是两种不同数据。
+
+## v0.3 订单与老板故事
+
+`orders.mjs` 保存虚构订单的纯函数状态与事件。`order-views.mjs` 只根据状态渲染页面，`orders.css` 独立维护响应式样式。订单演示使用单独的浏览器键 `weave-order-demo-v1`，旧售前进度沿用 `weave-growth-v1`；旧版存储无需清空。
+
+`src/boss.html` 为自包含 HTML 故事，构建时原样输出到根目录 `boss.html`。它的播放与计算器不修改产品状态；点击产品入口后，进入实际交互工作台。两份生成文件都由 CI 检查是否与源码一致。
+
+当前下载由浏览器生成，不上传外部系统。订单状态包括资料、差异、确认范围、版本与历史，避免用一个“完成”覆盖内部批准、客户接受和 ERP 回执。

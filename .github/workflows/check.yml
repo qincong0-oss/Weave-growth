@@ -16,4 +16,4 @@ jobs:
       - run: npm test
       - run: npm run build
       - name: Check generated demo is committed
-        run: git diff --exit-code -- index.html
+        run: git diff --exit-code -- index.html boss.html
