@@ -19,7 +19,7 @@
 - `boss.html`：六幕独立 HTML，讲述订单风险、三类差异、跨部门确认、变更复核、公司事实和可编辑价值测算。可自动播放、暂停、重播与键盘导航；全部效益数字明确为假设。
 - 订单状态使用独立 `weave-order-demo-v1` 浏览器存储，兼容已有售前状态；不是多人共享数据库。
 - 47 项规则测试通过；10 个路由及老板演示六幕已检查桌面与手机。老板演示、草稿编辑、确认、文件下载、变更、客诉和原售前循环均完成浏览器验证。
-- 本地版本已验证；本轮远程 CI 和发布回执见 `docs/verification.md`，发布结果以实际 GitHub 记录为准。
+- 已经 [PR #4](https://github.com/qincong0-oss/Weave-growth/pull/4) 合并并上线。PR / main CI 与 Pages 均成功；两个公开 HTML 均 HTTP 200 且与验证构建逐字节一致，详情见 `docs/verification.md`。
 
 ## v0.2 已有交付
 
@@ -58,3 +58,10 @@ GitHub Pages 已由用户启用，从 `main` 分支根目录发布。2026-09-17 
 ## v0.2 本轮交接
 
 用户要求加强外贸回款背调、企业现有系统/产品资料接入，并直接修改 Git 与安排上线。实现见 ADR 0002；集成边界见 `docs/integration-contract.md`。本轮已通过 [PR #2](https://github.com/qincong0-oss/Weave-growth/pull/2) 合并 main，发布提交 `4c1c7af1c2cbe737ef6d5c363d49b689bd33715c`。PR 与 main 的 Check 均成功，Pages 发布成功。公开页面 HTTP 200，162,300 字节，与本地已验证构建逐字节一致。企业背调入口 `#/diligence`，产品接入入口 `#/ingestion`。
+
+
+## v0.3 上线交接
+
+发布提交 `c751fb22542c6bc84c6fdbef482714eb18392568`，日期 2026-09-18。先给企业家看 [老板价值演示](https://qincong0-oss.github.io/Weave-growth/boss.html)，再进入 [订单确认](https://qincong0-oss.github.io/Weave-growth/#/orders) 与 [客诉证据](https://qincong0-oss.github.io/Weave-growth/#/aftersales)。演示脚本已同步。
+
+下一步是用真实但脱敏的一组资料验证确认耗时、遗漏、采用和接入成本。当前 UI 不构成真实 AI 服务、全自动跟单、信用决定或供应链托管。
