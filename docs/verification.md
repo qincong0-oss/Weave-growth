@@ -59,4 +59,15 @@ Chromium 已验证桌面 1440 × 1050 与手机 390 × 844：八个页面、六�
 
 订单、原文和确认事件是内置虚构样例。没有真实 AI、OCR、邮件、ERP、审批身份服务或多人数据库。浏览器内的内部批准只是流程演示。ERP 回执仅为模拟暂存，不证明生产、出货、验收或回款。客诉不是实际已发货事件。测算数字是假设，释放工时价值不等于现金节省或利润；未计入接入培训费用，也未计入无法归因的损失避免。
 
-远程 PR、CI 和 Pages 发布结果将在验证线上版本后记录。
+### v0.3 上线回执
+
+[PR #4](https://github.com/qincong0-oss/Weave-growth/pull/4) 已合并，发布提交 `c751fb22542c6bc84c6fdbef482714eb18392568`。[PR Check](https://github.com/qincong0-oss/Weave-growth/actions/runs/35317911500)、[main Check](https://github.com/qincong0-oss/Weave-growth/actions/runs/35317967387) 与 [Pages 发布](https://github.com/qincong0-oss/Weave-growth/actions/runs/35317966755) 均成功。
+
+2026-09-18 实测两个公开地址均 HTTP 200，且与通过交互验证的本地构建逐字节一致：
+
+| 文件 | 字节数 | SHA-256 |
+| --- | ---: | --- |
+| `index.html` | 250,146 | `6e84dd408c65c170742fd4344873df6433bae9419f878cc892e8977fcafd7b76` |
+| `boss.html` | 52,536 | `b0f4183b6b69213c1f367f4eecf230ed27031f8f963b229da5a17e7f8e57a1b8` |
+
+[老板价值演示](https://qincong0-oss.github.io/Weave-growth/boss.html) 与 [订单工作台](https://qincong0-oss.github.io/Weave-growth/#/orders) 已公开。GitHub 远程提交树与本地验证树一致（`ed30892e036215125d9c649d468b3f96ddb3ee9b`）。本回执仅记录部署证据，不改变生成文件或业务行为。

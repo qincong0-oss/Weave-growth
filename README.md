@@ -80,7 +80,7 @@ npm run build
 
 GitHub Pages 已启用，发布源为 `main` 分支根目录。之后 `main` 的静态文件会自动发布。根目录 `.nojekyll` 让 Pages 直接提供已经构建好的 HTML。
 
-演示地址：[qincong0-oss.github.io/Weave-growth](https://qincong0-oss.github.io/Weave-growth/)。2026-09-17 已确认部署成功、HTTP 200，线上内容与本地验证版本一致。仓库名称中的 `W` 为大写。
+演示地址：[qincong0-oss.github.io/Weave-growth](https://qincong0-oss.github.io/Weave-growth/)。2026-09-18 已确认 v0.3 部署成功，主 Demo 与老板演示均 HTTP 200，线上内容与本地验证版本一致；见 [验证回执](docs/verification.md)。仓库名称中的 `W` 为大写。
 
 `@0xrelander` 的实际成员邀请和强制评审规则仍待仓库所有者配置。已有 `scripts/bootstrap-github.sh` 保留为最初的初始化参考；本仓库已创建，无需再执行。
 
